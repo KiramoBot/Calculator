@@ -2,13 +2,12 @@ from tkinter import *
 root = Tk()
 root.title("Simple Calculator")
 
+# INPUT WINDOW ****************************************************************************************************************
 
-# INPUT WINDOW ***********************************
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
-
-# FUNCTION **********************************
+# FUNCTION *********************************************************************************************************************
 
 def button_click(number):
     current = e.get()
@@ -29,8 +28,16 @@ def button_equal():
     e.delete(0, END)
     e.insert(0, f_num + int(second_number))
 
+def button_subtract():
+    return
 
-# DEFINE BUTTONS ***********************************
+def button_multiply():
+    return
+
+def button_divide():
+    return
+
+# DEFINE BUTTONS *****************************************************************************************************************
 
 button1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
@@ -47,7 +54,11 @@ button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
 button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
-# IMPLEMENT THE BUTTONS *****************************
+button_subtract = Button(root, text="-", padx=39, pady=20, command=button_subtract)
+button_multiply = Button(root, text="*", padx=39, pady=20, command=button_multiply)
+button_divide = Button(root, text="/", padx=39, pady=20, command=button_divide)
+
+# IMPLEMENT THE BUTTONS ***********************************************************************************************************
 
 button1.grid(row=3, column=0)
 button2.grid(row=3, column=1)
