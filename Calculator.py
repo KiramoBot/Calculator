@@ -7,7 +7,7 @@ root.title("Simple Calculator")
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
-# FUNCTION *********************************************************************************************************************
+# FUNCTIONS *********************************************************************************************************************
 
 def button_click(number):
     current = e.get()
