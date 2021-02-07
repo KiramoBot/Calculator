@@ -1,2 +1,2 @@
 # Calculator
-Building a calculator
+Building a calculator with basic functions.
